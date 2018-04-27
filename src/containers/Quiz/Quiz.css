@@ -4,3 +4,23 @@
 	text-align: center; 
 	width: 100%;
 }
+
+button {
+	display: block;
+	margin: 20px auto;
+	background-color: #efefef;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #black;
+    color: black;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px black;
+}
+
+button:hover, .OrderButton:active {
+    background-color: darkgray;
+    border: 1px solid black;
+    color: black;
+}

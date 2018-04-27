@@ -6,7 +6,7 @@ const QUESTIONS = [
     {id:1, text:"Any dietary restrictions?", 
         answers: [  {text:"vegan", scoreChange:0}, 
                     {text:"vegetarian", scoreChange:0}, 
-                    {text:"lactose intollerant", scoreChange:0},
+                    {text:"lactose intolerant", scoreChange:0},
                     {text:"gluten-free", scoreChange:0}, 
                     {text:"none", scoreChange:0}]},
     

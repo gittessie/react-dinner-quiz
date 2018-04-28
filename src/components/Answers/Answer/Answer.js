@@ -1,9 +1,9 @@
 import React from 'react';
-//import styles from './Answer.css';
+import styles from './Answer.css';
 
 const answer = (props) => {
     return (
-        <div>
+        <div className={styles.Answer} onClick={() =>{props.click(props.score)}}>
             <p>{props.text}</p>
         </div>
     );

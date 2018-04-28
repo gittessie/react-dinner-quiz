@@ -1,0 +1,25 @@
+.Answer {
+    width: 80%;
+    height: 25%;
+    display: inline-block; 
+    box-sizing: border-box;
+    margin: 5px; 
+    border: 3px soild black;
+    box-shadow: 0 2px 2px #ccc; 	
+    overflow: hidden;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+.Answer p{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+@media (min-width: 600px){
+	.Answer{
+        padding: 5px 50px;
+	}
+}

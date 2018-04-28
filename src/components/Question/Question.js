@@ -6,42 +6,39 @@ import Answers from '../Answers/Answers';
 
 class Question extends Component {
     state={
-        scoresAdditions:{
-            pizza: 0,
-            vegan_pizza: 0,
-            italian: 0, 
-            indian: 0,
-            tapas: 0, 
-            middle_eastern: 0,
-            bbq: 0, 
-            chinese: 0, 
-            thai: 0, 
-            ramen: 0, 
-            breakfast: 0, 
-            american: 0, 
-            mexican: 0, 
-            salad: 0            
-        },
         isAnswered: false, 
         answering: false
     }
 
-    answerQuestionHandler = () => {
+    answerQuestionModalHandler = () => {
         this.setState({answering: true});
     }
 
-    answerQuestionCancelHandler = () => {
+    answerQuestionModalCancelHandler = () => {
         this.setState({answering: false});
     }
 
+    answerQuestionHandler = (scores) => {
+        this.props.scoreUpdateFunc(scores);
+        this.setState({isAnswered: true, answering: false});
+    }
+
     render(){
-        return(
+        let questionClick= this.answerQuestionModalHandler;
+        let questionStyle = null; 
+        if(this.state.isAnswered){
+            questionClick = null;
+            questionStyle = {backgroundColor: '#ededed', cursor: 'auto'} 
+        }
+        return(    
             <Aux>
-                <Modal show={this.state.answering} modalClose={this.answerQuestionCancelHandler}>
+                <Modal show={this.state.answering} modalClose={this.answerQuestionModalCancelHandler}>
                     <h3>{this.props.text}</h3>
-                    <Answers answers={this.props.answers} />
+                    <Answers answers={this.props.answers} click={this.answerQuestionHandler}/>
                 </Modal>
-                <div className={styles.Question} onClick={this.answerQuestionHandler}>
+                <div className={styles.Question} 
+                    onClick={questionClick}
+                    style={questionStyle}>
                     <h3>{this.props.text}</h3>	
                 </div>
             </Aux>

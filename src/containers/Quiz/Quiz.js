@@ -58,7 +58,7 @@ class Quiz extends Component {
                 <Modal show={this.state.showResult} modalClose={null}>
                     <h3>You should go eat {RESULTS[this.state.result].value}</h3>
                     <p>{RESULTS[this.state.result].text}</p>
-                    <button onClick={this.playAgainHandler}>Reset</button>
+                    <button onClick={this.playAgainHandler}>Take the Quiz Again</button>
                 </Modal>
             );
         }

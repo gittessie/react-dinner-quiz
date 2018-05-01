@@ -8,7 +8,10 @@
 	height: 150px;
 	cursor: pointer;
 	overflow: hidden;
+	background-color: white;
 }
+
+
 @media (min-width: 600px){
 	.Question{
 		width:40%; 

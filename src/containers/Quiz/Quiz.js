@@ -4,7 +4,7 @@ import Question from '../../components/Question/Question';
 import QUESTIONS from '../../hoc/QUESTIONS';
 import RESULTS from '../../hoc/RESULTS';
 import Aux from '../../hoc/Aux/Aux';
-import Modal from '../../hoc/Modal/Modal';
+import Result from '../../components/Result/Result';
 
 class Quiz extends Component {
     state={
@@ -55,11 +55,10 @@ class Quiz extends Component {
         let resultSpace = null; 
         if(this.state.showResult){
             resultSpace = (
-                <Modal show={this.state.showResult} modalClose={null}>
-                    <h3>You should go eat {RESULTS[this.state.result].value}</h3>
-                    <p>{RESULTS[this.state.result].text}</p>
-                    <button onClick={this.playAgainHandler}>Take the Quiz Again</button>
-                </Modal>
+                <Result show={this.state.showResult} resultVal={RESULTS[this.state.result].value}
+                    resultImg={RESULTS[this.state.result].imgSrc}
+                    resultText={RESULTS[this.state.result].text}
+                    btnClk={this.playAgainHandler} />
             );
         }
         return(

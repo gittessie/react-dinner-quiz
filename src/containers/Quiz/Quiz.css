@@ -2,10 +2,10 @@
 	padding-top: 30px; 
 	margin: auto; 
 	text-align: center; 
-	width: 100%;
+    width: 100%;
 }
 
-button {
+.Quiz button {
 	display: block;
 	margin: 20px auto;
 	background-color: #efefef;
@@ -16,10 +16,11 @@ button {
     font-family: inherit;
     font-size: 1.2em;
     padding: 15px 30px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 1px 1px 1px black;
+    width: 50%;
 }
 
-button:hover, .OrderButton:active {
+.Quiz button:hover {
     background-color: darkgray;
     border: 1px solid black;
     color: black;

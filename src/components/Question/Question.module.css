@@ -1,14 +1,14 @@
 .Question {
 	display: inline-block; 
 	margin:10px; 
-	border:1px solid #eee;
-	box-shadow: 0 2px 2px #ccc; 
+	border:0;
 	padding: 10px; 
 	width:70%; 
 	height: 150px;
 	cursor: pointer;
 	overflow: hidden;
 	background-color: white;
+	border-radius: 0.25rem;
 }
 
 

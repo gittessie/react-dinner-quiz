@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Modal.css';
+import styles from './Modal.module.css';
 import Aux from '../Aux/Aux';
 import Backdrop from '../Backdrop/Backdrop';
 

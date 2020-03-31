@@ -1,5 +1,4 @@
 import React from 'react';
-//import styles from './Answers.css';
 import Answer from './Answer/Answer';
 
 const answers = (props) => {

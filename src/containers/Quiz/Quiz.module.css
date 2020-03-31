@@ -8,20 +8,20 @@
 .Quiz button {
 	display: block;
 	margin: 20px auto;
-	background-color: #efefef;
+	background-color: #efd3d7;
     outline: none;
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid #8e9aaf;
     color: black;
     font-family: inherit;
     font-size: 1.2em;
     padding: 15px;
-    box-shadow: 1px 1px 1px black;
     width: 50%;
+    border-radius: 0.25rem;
 }
 
 .Quiz button:hover {
-    background-color: darkgray;
-    border: 1px solid black;
+    background-color: #dee2ff;
+    border: 1px solid #8e9aaf;
     color: black;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Result.css';
+import styles from './Result.module.css';
 import Modal from '../../hoc/Modal/Modal';
 
 const result = (props) => {

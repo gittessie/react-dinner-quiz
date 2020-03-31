@@ -1,6 +1,6 @@
 const QUESTIONS = [ 
     {id:1, text:"Any dietary restrictions?", 
-        answers: [  {text:"vegan", 
+        answers: [  {text:"Vegan", 
                     scoreChange:{
                         pizza: -5,
                         vegan_pizza: 5,
@@ -17,7 +17,7 @@ const QUESTIONS = [
                         mexican: 3, 
                         salad: 3            
                                 }}, 
-                    {text:"vegetarian", 
+                    {text:"Vegetarian", 
                     scoreChange:{
                         pizza: 5,
                         vegan_pizza: 5,
@@ -34,7 +34,7 @@ const QUESTIONS = [
                         mexican: 5, 
                         salad: 3            
                                 }}, 
-                    {text:"lactose intolerant", 
+                    {text:"Lactose Intolerant", 
                     scoreChange:{
                         pizza: -5,
                         vegan_pizza: 0,
@@ -51,7 +51,7 @@ const QUESTIONS = [
                         mexican: 3, 
                         salad: 3            
                                 }},
-                    {text:"gluten-free", 
+                    {text:"Gluten-Free", 
                     scoreChange:{
                         pizza: -5,
                         vegan_pizza: -5,
@@ -68,7 +68,7 @@ const QUESTIONS = [
                         mexican: 5, 
                         salad: 3            
                                 }}, 
-                    {text:"none", 
+                    {text:"None", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -86,8 +86,8 @@ const QUESTIONS = [
                         salad: -1            
                                 }}]},
     
-    {id:2, text:"What's the occassion?", 
-        answers: [  {text:"just a casual meal", 
+    {id:2, text:"What's the occasion?", 
+        answers: [  {text:"Just a casual meal", 
                     scoreChange:{
                         pizza: 2,
                         vegan_pizza: 2,
@@ -104,7 +104,7 @@ const QUESTIONS = [
                         mexican: 0, 
                         salad: 0            
                                 }},
-                    {text:"fancy date", 
+                    {text:"Fancy date", 
                     scoreChange:{
                         pizza: -5,
                         vegan_pizza: -5,
@@ -121,7 +121,7 @@ const QUESTIONS = [
                         mexican: 2, 
                         salad: -5            
                                 }},
-                    {text:"something in between", 
+                    {text:"Something in-between", 
                     scoreChange:{
                         pizza: -2,
                         vegan_pizza: -2,
@@ -193,7 +193,7 @@ const QUESTIONS = [
                                 }}]},
     
     {id:4, text:"Are you looking for a quick bite or a proper sit-down?", 
-        answers: [  {text:"down for a quickie", 
+        answers: [  {text:"Down for a quickie", 
                     scoreChange:{
                         pizza: 5,
                         vegan_pizza: 5,
@@ -210,7 +210,7 @@ const QUESTIONS = [
                         mexican: 2, 
                         salad: 5            
                                 }},
-                    {text:"let's take it slow", 
+                    {text:"Let's take it slow", 
                     scoreChange:{
                         pizza: -5,
                         vegan_pizza: -5,
@@ -227,7 +227,7 @@ const QUESTIONS = [
                         mexican: 0, 
                         salad: 0            
                                 }}, 
-                    {text:"open to anything", 
+                    {text:"Open to anything", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -299,7 +299,7 @@ const QUESTIONS = [
                                 }}]},
     
     {id:6, text:"How indecisive are you?", 
-        answers: [  {text:"enough to rely on quizzes to make my decisions", 
+        answers: [  {text:"Enough to rely on quizzes to make my decisions", 
                     scoreChange:{
                         pizza: 3,
                         vegan_pizza: 3,
@@ -316,7 +316,7 @@ const QUESTIONS = [
                         mexican: 0, 
                         salad: 0            
                                 }},
-                    {text:"not that indecisive", 
+                    {text:"Not that indecisive", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -352,7 +352,7 @@ const QUESTIONS = [
                                 }}]},
     
     {id:7, text:"How adventurous are you?", 
-        answers: [  {text:"very", 
+        answers: [  {text:"Very", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -369,7 +369,7 @@ const QUESTIONS = [
                         mexican: 5, 
                         salad: 0            
                                 }},
-                    {text:"somewhat", 
+                    {text:"Somewhat", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -386,7 +386,7 @@ const QUESTIONS = [
                         mexican: 3, 
                         salad: 0            
                                 }},
-                    {text:"not at all", 
+                    {text:"Not at all", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -405,7 +405,7 @@ const QUESTIONS = [
                                 }}]},
     
     {id:8, text:"Do you like spicy foods?", 
-        answers: [  {text:"yes", 
+        answers: [  {text:"Yes", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -422,7 +422,7 @@ const QUESTIONS = [
                         mexican: 3, 
                         salad: 0            
                                 }},
-                    {text:"no", 
+                    {text:"No", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,
@@ -439,7 +439,7 @@ const QUESTIONS = [
                         mexican: -3, 
                         salad: 0            
                                 }},
-                    {text:"in moderation", 
+                    {text:"In moderation", 
                     scoreChange:{
                         pizza: 0,
                         vegan_pizza: 0,

@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Answer.css';
+import styles from './Answer.module.css';
 
 const answer = (props) => {
     return (
-        <div className={styles.Answer} onClick={() =>{props.click(props.score)}}>
+        <button className={styles.Answer} onClick={() =>{props.click(props.score)}}>
             {props.text}
-        </div>
+        </button>
     );
 }
 

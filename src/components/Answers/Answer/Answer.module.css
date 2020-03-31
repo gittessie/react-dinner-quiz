@@ -8,7 +8,6 @@
     border: 1px solid #efefef;
     margin: 10px auto;
     background-color: #efefef;
-    height: 50px;
     width: 70%;
 }
 .Answer:hover{
@@ -18,8 +17,6 @@
 
 @media (min-width: 600px){
 	.Answer{
-        height: 35px;
-        padding: 5px 50px;
         width: 60%;
 	}
 }

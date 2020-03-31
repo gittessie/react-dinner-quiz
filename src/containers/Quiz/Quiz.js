@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Quiz.css';
+import styles from './Quiz.module.css';
 import Question from '../../components/Question/Question';
 import QUESTIONS from '../../hoc/QUESTIONS';
 import RESULTS from '../../hoc/RESULTS';
@@ -25,7 +25,8 @@ class Quiz extends Component {
             salad: 0            
         },
         showResult: false, 
-        result: null
+        result: null,
+        resetQuestions: 0,
     }
 
     updateScoresHandler = (scores) => {
@@ -48,7 +49,27 @@ class Quiz extends Component {
     }
 
     playAgainHandler = () => {
-        window.location.reload();
+        this.setState({
+            scores:{
+                pizza: 0,
+                vegan_pizza: 0,
+                italian: 0, 
+                indian: 0,
+                tapas: 0, 
+                middle_eastern: 0,
+                bbq: 0, 
+                chinese: 0, 
+                thai: 0, 
+                ramen: 0, 
+                breakfast: 0, 
+                american: 0, 
+                mexican: 0, 
+                salad: 0            
+            },
+            showResult: false, 
+            result: null, 
+            resetQuestions: this.state.resetQuestions +1
+        })
     }
 
     render(){
@@ -63,13 +84,14 @@ class Quiz extends Component {
         }
         return(
             <Aux>
-                {resultSpace}
                 <div className={styles.Quiz}>
+                    {resultSpace}
                     <h1>What should I eat for dinner?</h1>
                     {QUESTIONS.map((props)=> <Question text={props.text} 
                                                 answers={props.answers} 
                                                 key={props.id}
-                                                scoreUpdateFunc = {this.updateScoresHandler}/>)}
+                                                scoreUpdateFunc = {this.updateScoresHandler}
+                                                resetQuestions = {this.state.resetQuestions}/>)}
                     <button onClick={this.showResultHandler}>Go</button>
                 </div>
             </Aux>

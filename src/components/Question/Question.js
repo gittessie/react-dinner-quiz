@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Question.css';
+import styles from './Question.module.css';
 import Aux from '../../hoc/Aux/Aux';
 import Modal from '../../hoc/Modal/Modal';
 import Answers from '../Answers/Answers';
@@ -9,6 +9,13 @@ class Question extends Component {
         isAnswered: false, 
         answering: false
     }
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.resetQuestions !== this.props.resetQuestions) {
+          this.setState({isAnswered: false, answering: false});
+        }
+      }
+      
 
     answerQuestionModalHandler = () => {
         this.setState({answering: true});
@@ -28,7 +35,7 @@ class Question extends Component {
         let questionStyle = null; 
         if(this.state.isAnswered){
             questionClick = null;
-            questionStyle = {backgroundColor: '#ededed', cursor: 'auto'} 
+            questionStyle = {backgroundColor: '#8e9aaf', cursor: 'auto'} 
         }
         return(    
             <Aux>
